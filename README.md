@@ -97,7 +97,7 @@ terraform plan
 Создать инфраструктуру:
 
 ```
-transform apply
+terraform apply
 ```
 
 Terraform запросит подтверждение:
