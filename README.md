@@ -508,7 +508,13 @@ resource "docker_volume" "nginx_volume" {
 
 # Пример использования monitor.sh:
 
+На хосте:
+
 ![alt text](image.png)
+
+На VM:
+
+![alt text](image-4.png)
 
 # Про docker-compose
 
