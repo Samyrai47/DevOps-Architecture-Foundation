@@ -18,7 +18,7 @@ git clone https://github.com/Samyrai47/DevOps-Architecture-Foundation.git
 Перейти в директорию ansible:
 
 ```
-cd DEVOPS-ARCHITECTURE-FOUNDATION
+cd DevOps-Architecture-Foundation
 cd ansible
 ```
 
@@ -47,7 +47,7 @@ git clone https://github.com/Samyrai47/DevOps-Architecture-Foundation.git
 Перейти в директорию terraform:
 
 ```
-cd DEVOPS-ARCHITECTURE-FOUNDATION
+cd DevOps-Architecture-Foundation
 cd terraform
 ```
 
@@ -143,7 +143,7 @@ git clone https://github.com/Samyrai47/DevOps-Architecture-Foundation.git
 Перейти в директорию scripts:
 
 ```
-cd DEVOPS-ARCHITECTURE-FOUNDATION
+cd DevOps-Architecture-Foundation
 cd scripts
 ```
 
