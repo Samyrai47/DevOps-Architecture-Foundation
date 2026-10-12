@@ -1,0 +1,23 @@
+- name: Create deployer user
+  user:
+    name: deployer
+    state: present
+    shell: /bin/bash
+    append: yes
+    groups: 
+      - sudo
+      - docker
+
+- name: Allow deployer to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^deployer\s'
+    line: 'deployer ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+
+- name: Add SSH key for deployer
+  authorized_key:
+    user: deployer
+    state: present
+    key: "{{ lookup('file', lookup('env', 'HOME') + '/.ssh/id_rsa.pub') }}"
